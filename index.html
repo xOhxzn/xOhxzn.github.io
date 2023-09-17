@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+    <!-- Agrega varias imágenes con la clase image-preview -->
+    <div class="container">
+      <div class="title">Generador de Tareas a PDF<br><div class="titlepo">Powered By <span class="titlepopo">Fuzz</span></div></div>
+    </div>
+    <div class="container2">
+        <p>Selecciona hasta 10 fotografías:</p>
+        <input type="file" id="file-input" accept="image/*" multiple>
+        <div id="image-container"></div>
+    </div>
+    <br>
+    <form id="pdf-form">
+      <div class="input-field">
+        <input type="text" class="input" id="nombre" name="nombre" required maxlength="30"><br>
+        <label for="nombre">Nombre del Profesor:</label>
+      </div>
+      <div class="input-field">
+          <input type="text" class="input" id="nombre_propio" name="nombre_propio" required maxlength="30"><br>
+          <label for="nombre_propio">Nombre:</label>
+      </div>
+      <div class="input-field">
+          <input type="text" class="input" id="matricula" name="matricula" required maxlength="7"><br>
+          <label for="matricula">Matricula:</label>
+      </div>
+      <div class="input-field">
+          <input type="text" class="input" id="materia" name="materia" required maxlength="20"><br>
+          <label for="materia">Materia:</label>
+      </div>
+      <div class="input-field">
+          <input type="text" class="input" id="actividad" name="actividad" required maxlength="20"><br>
+          <label for="actividad">Actividad:</label>
+      </div>
+      <div class="input-field">
+          <input type="date" id="fecha" name="fecha" required><br>
+          <label  id="label1" for="actividad">Fecha:</label>
+      </div>
+      <div id="thumbnails-container"></div>
+      <div class="input-field2">
+          <a class="createpdf" href="javascript:genPDF()"><p>Crear pdf</p></a>
+      </div>
+  </form>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 1000px;
+}
+.image-preview {
+	display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Lobster&display=swap');
+
+.miniatura {
+    width: 60px; /* Ancho de las miniaturas */
+    margin: 10px;
+}
+
+@font-face {
+  font-family: 'Classical';
+  src: url('clasical.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Cool';
+  src: url('coolveticargit.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Coolrg';
+  src: url('coolveticarg.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Geo';
+  src: url('GeosansLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sec';
+  src: url('secrcode.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ken';
+	src: url('kenyancoffeerg.otf') format('truetype');
+}
+.title {
+	width: 100%;
+	color: #fff;
+	font-family: 'Ken', sans-serif;
+	font-size: 40px;
+}
+
+.titlepo {
+	color: #05a86a;
+	font-family: 'Cool', sans-serif;
+	margin: 0;
+	font-size: 10px;
+}
+.titlepopo {
+	color: #fff;
+	font-family: 'Classical';
+	font-weight: 200;
+	margin: 0;
+	font-size: 20px;
+}
+.container, .container2 {
+  text-align: center; /* Centrar horizontalmente el contenido */
+}
+.container {
+  position: sticky;
+  top: 0; /* Otra opción es usar 'bottom: 0;' si deseas que el elemento sea pegajoso en la parte inferior */
+  background-color: #f0f0f0; /* Cambia esto según tu diseño */
+  z-index: 1;
+}
+
+.container2 p {
+	font-family: 'Fira Code', monospace;
+	font-size: 15px;
+}
+.container2 input {
+	font-family: 'Fira Code', monospace;
+	font-weight: bold;
+	font-size: 15px;
+}
+.title {
+	background-color: #000000;
+  display: inline-block; /* Para que el div ocupe solo el ancho del contenido */
+  padding: 10px; /* Espaciado de ejemplo */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+#pdf-form {
+	font-family: 'Fira Code', monospace;
+	text-align: center; /* Centrar horizontalmente el contenido */
+  margin-top: 20px;
+}
+
+.input-field {
+	display: inline-block; /* Hacer que el elemento sea en línea y centrado horizontalmente */
+  position: relative;
+  font-family: 'Fira Code', monospace;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 10px 15px;
+  text-decoration: none;
+  color: #05a86a;
+}
+
+.input-field input {
+	font-family: 'Fira Code', monospace;
+	width: 150px;
+	height: 40px;
+	border-radius: 6px;
+	font-size: 14px;
+	padding: 0 15px;
+	border:  2px solid #05a86a;
+	background: transparent;
+	color: #000000;
+	outline: none;
+}
+
+.input-field label {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	transform: translateY(-50%);
+	font-size: 14px;
+	pointer-events: none;
+	transition: .3s;
+}
+
+.input:focus ~ label {
+	top: 0;
+	left: 12px;
+	font-size: 11px;
+	padding: 0 2px;
+	background: white;
+}
+.input-field input:valid ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 11px;
+  padding: 0 2px;
+  background: white;
+}
+
+#label1 {
+	position: absolute;
+	top: 0;
+	left: 12px;
+	transform: translateY(-50%);
+	font-size: 12px;
+	pointer-events: none;
+	padding: 0 2px;
+	background: white;
+	transition: .3s;
+}
+
+.input-field2 {
+	display: inline-block; /* Hacer que el elemento sea en línea y centrado horizontalmente */
+    position: relative;
+    font-family: 'Fira Code', monospace;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 10px 15px;
+    text-decoration: none;
+    background-color: #05a86a;
+}
+
+.input-field2 a {
+	text-decoration: none;
+    display: inline-block; /* Agregar esta línea para hacer que sea un elemento en línea pero con las propiedades de bloque */
+    font-family: 'Fira Code', monospace;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 0 15px;
+    border: 2px solid #05a86a;
+    background: transparent;
+    color: #ffffff;
+    outline: none;
+}
+
